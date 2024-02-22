@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --primary-color: #e50914;
+    --primary-color-dark: #9f0d14;
+    --bg-dark-primary: #000000;
+    --bg-dark-secondary: #121212;
+    --bg-gray: #171717;
+    --bg-gray-hover:#282828;
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+    --border-radius: 0.3rem;
+    --text-primary-color: #fff;
+    --text-secondary-color: #737373;
+}
+
+body{
+    background-color: var(--bg-dark-primary);
+}
+
+/* global css starts here  */
+
+a{
+    text-decoration: none;
+} 
+
+button , .button{
+    background-color: white;
+    color: black;
+    padding: .4rem 1rem;
+    border-radius: var(--border-radius);
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: all ease-in-out 200ms;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    
+}
+
+.btn-primary:hover{
+    background-color: var(--primary-color-dark);
+    border: 1px solid var(--primary-color-dark);
+
+}
+.btn-secondary{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+h1, h2, h3, h4, h5, h6{
+    line-height: 2.5rem;
+    font-family: var(--font-primary);
+    font-weight: 800;
+    color: var(--text-primary-color);
+}
+h1{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    
+}
+h2{
+    line-height: 3.5rem;
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+h3{
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    font-weight: 500;
+}
+h4{
+    font-size: 18px;
+    margin: .5rem 0;
+}
+p{
+    font-size: 16px;
+    font-family: var(--font-primary);
+    line-height: 2;
+    color: var(--text-primary-color);
+    
+}
+
+label{
+    color: var(--text-primary-color);
+}
+
+input{
+    border: none;
+    outline: none;
+    color: var(--text-primary-color);
+}
+
+li{
+    font-family: var(--font-secondary);
+    list-style: none;
+    color: var(--text-secondary-color);
+
+}
+a{
+    color: var(--text-secondary-color);
+}
+
+ion-icon{
+    color: var(--text-primary-color);
+}
+.subTitle{
+    font-size: 24px;
+    line-height: 2rem;
+
+}
+.container{
+    width: 90%;
+    border-radius: 10px;
+    margin: 0 auto;
+
+}
+.row{
+    width: 100%;
+}
+.column{
+    flex: 1;
+}
+.title{
+    text-align: center;
+}
+.parent{
+    width: 99%;
+    margin: 1rem auto;
+}
+.grid{
+    display: grid;
+
+}
+.d-flex{
+    display: flex;
+    flex-wrap: nowrap;
+ 
+    
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-start{
+    justify-content: start;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.align-start{
+    align-items: start;
+}
+.direction-column{
+    flex-direction: column;
+}
+.direction-row{
+    flex-direction: row;
+}
+.align-content{
+    align-content: space-between ;
+
+}
+
+.flex-nowrap{
+    flex-wrap: nowrap;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.seprator{
+    width: 100%;
+    height: .4rem;
+    background-color: var(--bg-gray-hover);
+}
+
+.padding{
+    /* background-color: #9f0d14; */
+    padding: 4% 0;
+}
+i{
+    color: var(--text-primary-color);
+}
+
+
+/* global css ends here  */
+
+
+
+/* header starts here  */
+header{
+    padding: .7rem 0;
+}
+header .logo img{
+    width: 50%;
+}
+header .grid{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 2fr 3fr 4fr 1fr;
+    align-items: right;
+}
+header .location i{
+    padding: 0 .7rem 0 0 ;
+}
+header .location p{
+    line-height: 1 !important;
+    font-size: 14px;
+    /* background-color: red !important; */
+}
+/* header ends here  */
