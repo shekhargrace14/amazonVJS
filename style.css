@@ -6,8 +6,8 @@
 }
 
 :root{
-    --primary-color: #e50914;
-    --primary-color-dark: #9f0d14;
+    --primary-color: #fd9a18;
+    --primary-color-light: #ffd814;
     --bg-dark-primary: #000000;
     --bg-dark-secondary: #121212;
     --bg-gray: #171717;
@@ -131,7 +131,7 @@ ion-icon{
     width: 100%;
 }
 .column{
-    flex: 1;
+    /* flex: 1; */
 }
 .title{
     text-align: center;
@@ -206,13 +206,16 @@ header{
     padding: .7rem 0;
 }
 header .logo img{
-    width: 50%;
+    width: 90%;
 }
 header .grid{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 2fr 3fr 4fr 1fr;
+    grid-auto-columns: 1fr 2fr 7fr 2fr;
     align-items: right;
+}
+header .location{
+    padding: 0 0.5rem ;
 }
 header .location i{
     padding: 0 .7rem 0 0 ;
@@ -222,4 +225,75 @@ header .location p{
     font-size: 14px;
     /* background-color: red !important; */
 }
+header .search input{
+    width: 95%;
+    padding: .5rem;
+    margin: 0;
+}
+header .search i{
+    padding: .5rem;
+    background-color: var(--primary-color);
+    margin: 0;
+    color: var(--bg-dark-primary);
+
+}
+header .cart {
+    padding: 0 1rem; 
+}
+header .cart i{
+    font-size: 1.8rem;
+}
+
 /* header ends here  */
+
+/* hero start hero */
+.hero {
+    color: white;
+}
+.hero .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 1) -12px );
+    gap: 5px;
+}
+.hero .card{
+    /* width: 100%; */
+    /* background-color: red; */
+}
+.hero .card img{
+    width: 50%;
+}
+/* hero ends hero */
+/* products starts here  */
+.products{
+    color: var(--bg-dark-primary) !important;
+}
+.products .productsRow{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: space-between;
+    /* grid-auto-flow: row; */
+    /* grid-auto-columns: calc((100% / 1) -12px ); */
+    /* grid-auto-columns: 1fr 1fr 1fr 1fr; */
+
+
+}
+.products .productsRow .card{
+    /* background-color: var(--text-primary-color); */
+    width: 18%;
+}
+
+.products .productsRow .imgBox{
+    width: 100%;
+    height: 200px;
+    /* background-color: green; */
+    overflow: hidden;
+    /* object-fit: cover; */
+}
+.products .productsRow img{
+    width: 100%;
+    /* object-fit:contain; */
+    /* object-position: center; */
+}
+/* products ends here  */
