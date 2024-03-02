@@ -18,9 +18,7 @@ fetch("https://fakestoreapi.com/products")
                             <p class="discount">$ ${value.price + 6}</p>
                             <p class="CurrentPrice">$ ${value.price}</p>
                         </div>
-                        <div class="buttonDiv">
-                            <button class="btn-primary">Add to cart</button>
-                        </div>
+
 
                     </div>
                 </div>
