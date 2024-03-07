@@ -321,7 +321,7 @@ header .cart i{
 
 }
 .products .productsRow img{
-    width: 100%;
+    width: 50%;
     object-fit:fill;
     /* object-position: center; */
     /* mix-blend-mode: multiply;  */

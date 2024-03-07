@@ -8,21 +8,34 @@ fetch("https://fakestoreapi.com/products")
     // console.log( matchedId,"this is matchedId")
     
     if(matchedId){
-        // document.querySelector("#sc").innerHTML = matchedId.image;  
         document.querySelector(".productTitle").innerHTML = matchedId.title;
         document.querySelector(".description").innerHTML = matchedId.description;
         document.querySelector(".discount").innerHTML = matchedId.price + 5;
         document.querySelector(".CurrentPrice").innerHTML = matchedId.price;
         document.getElementById("imageUrl").src = matchedId.image;
-        document.getElementById("imageUrl").alt = matchedId.id;
+        document.getElementById("addToCartProductId").id = matchedId.id;
+        document.querySelector("#productId").id = matchedId.id;
     }
 })
 
-let  
- = document.querySelector(".addToCartBtn")
-let addToCartId = document.querySelector("img")
-addToCartBtn.addEventListener("click", ()=>{
-    console.log("addToCartBtn clicked")
+let addToCartBtn= document.querySelector(".addToCartBtn")
+
+// console.log(addToCartBtn, "productId")
+
+addToCartBtn.addEventListener("click", (e)=>{
+    let addToCartProductIdArray = [];
+    let addToCartProductId = e.target.id;
+
+    addToCartProductIdArray = JSON.parse(localStorage.getItem("addToCartItems")) ?? []
     
+    console.log(addToCartProductIdArray);
+
+    addToCartProductIdArray.push(addToCartProductId)
+
+    console.log("addToCartBtn clicked", e.target.id)
+
+    localStorage.setItem("addToCartItems",JSON.stringify(addToCartProductIdArray))
+
 })
-// console.log(addToCartId,"addToCartId")
+
+

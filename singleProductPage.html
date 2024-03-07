@@ -11,7 +11,6 @@
             /* margin: 6% 0; */
             background-color: var(--primary-color);
             padding: 6% 0;
-
         }
         .singleProduct .row .left{
             width: 50%;
@@ -22,19 +21,16 @@
         .singleProduct .row .column .imgBox img{
             width: 100%;
         }
-
-
     </style>
-
 </head>
 <body>
     <Header></Header>
-    <div class="singleProduct">
+    <div class="singleProduct" id="productId">
         <div class="container">
             <div class="row d-flex gap">
                 <div class="column left">
                     <div class="imgBox d-flex align-center justify-center">
-                        <img src=" " alt="" id="imageUrl">
+                        <img src=" " alt="" id="imageUrl" >
                     </div>
                 </div>
                 <div class="column">
@@ -45,9 +41,10 @@
                             <p class="discount"></p>
                             <p class="CurrentPrice"> </p>
                         </div>
+                        <a href="singleProductPage.html"></a>
                         <div class="buttonDiv">
                             <a href="./cart.html">
-                                <button class="btn-primary addToCartBtn">Add to cart</button>
+                                <button class="btn-primary addToCartBtn" id="addToCartProductId"  >Add to cart</button>
                             </a>
                             <button class="btn-primary">Wish List</button>
                         </div>
