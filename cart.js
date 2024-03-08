@@ -12,8 +12,10 @@ fetch("https://fakestoreapi.com/products")
     });
     // console.log(addToCartMatchedItems, "addToCartMatchedItems")
     let table = document.querySelector("table");
+    let totalPriceArray = [];
     // console.log(table)
     addToCartMatchedItems.map((element)=>{
+        totalPriceArray.push(element.price)
         table.insertAdjacentHTML("beforeend",`
             <tr>
                 <td>
@@ -23,28 +25,20 @@ fetch("https://fakestoreapi.com/products")
                     <p>${element.title}</p>
                 </td>
                 <td>1</td>
-                <td class="price">${element.price}</td>
+                <td class="price">${element.price.toFixed(2)}</td>
             </tr>
         `)      
     })
+    let totalPrice = totalPriceArray.reduce((total, price)=>price+total,0)
+    console.log(totalPrice,"totalPrice")
+    let grandTotal = document.querySelector(".grandTotal")
+    console.log(grandTotal,"grandTotal")
 
-
-
-    let price = document.querySelectorAll(".price")
-    let priceValue = price.innerHTML
-    console.log(priceValue, "priceValue");
-    // let price = [1,2,3,4,5,6,7,8,9,0]
-    let totalPriceCalculation = price.forEach((element)=>{
-        let priceSingle = element.innerHTML;
-        // console.log(priceSingle, "priceSingle");
-
-        let grandTotal = 0;
-
-        grandTotal = grandTotal + Number(priceSingle)
-
-        // console.log(grandTotal, "grandTotal");
-
-
-    })
-    console.log(totalPriceCalculation, "totalPriceCalculation");
+    grandTotal.insertAdjacentHTML("beforeend",`
+        <tr>
+            <td>Total</td>
+            <td class="totalPRice">${totalPrice.toFixed(2)}</td>
+        </tr>
+    
+    `)  
 })

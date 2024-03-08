@@ -15,8 +15,8 @@ fetch("https://fakestoreapi.com/products")
                         <p class="productTitle">${value.title}</p>
                         <p class="description"> ${value.description}</p>
                         <div class="price d-flex ">
-                            <p class="discount">$ ${value.price + 6}</p>
-                            <p class="CurrentPrice">$ ${value.price}</p>
+                            <p class="discount">$ ${(value.price+ 5).toFixed(2) }</p>
+                            <p class="CurrentPrice">$ ${value.price.toFixed(2)}</p>
                         </div>
 
 

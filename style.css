@@ -187,6 +187,10 @@ ion-icon{
     height: .4rem;
     background-color: var(--bg-gray-hover);
 }
+.discount{
+    color: var(--bg-gray-hover);
+    text-decoration: line-through;
+}
 
 .padding{
     /* background-color: #9f0d14; */
@@ -356,9 +360,5 @@ header .cart i{
 .products .productsRow .card .info .price{
     gap: 16px;
 }
-.products .productsRow .card .info .price .discount{
-    color: var(--bg-gray-hover);
-    text-decoration: line-through;
 
-}
 /* products ends here  */
