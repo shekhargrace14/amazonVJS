@@ -15,14 +15,19 @@
       width: 100%;
       border: 1px solid black;
       text-align: center;
+      margin: 6% 0;
     }
 
     table,
-    tr,
-    th,
-    td {
+    tr{
       border: 1px solid black;
       border-collapse: collapse;
+    }
+    th{
+      background-color: aqua;
+    }
+    .product:nth-child(even){
+      background-color: red ;
     }
 
     table img {
@@ -33,11 +38,47 @@
       margin: 6% 0 ;
       background-color: var(--primary-color);
     }
+    .quantity {
+
+    }
+    .quantity .quantity-box{
+      background-color: var(--primary-color) !important;
+      display: inline;
+      /* border: 1px solid black; */
+      padding: 1rem;
+
+      /* background-color: green; */
+    }
+    .quantity .quantity-box span{
+      /* border: 1px solid black; */
+      padding: 1rem;
+      cursor: pointer;
+
+
+    }
+    .quantity .quantity-box .delete{
+      cursor: pointer;
+    }
+    .cartStatus{
+      /* display: none; */
+    }
+
   </style>
 </head>
 
 <body>
   <header></header>
+
+  <!-- cartStatus starts   -->
+  <div class="container cartStatus">
+    <div class="row">
+      <div class="col">
+        <h2> Your cart is Empty</h2>
+      </div>
+    </div>
+  </div>
+  <!-- cartStatus ends   -->
+
   <div class="container">
     <div class="row">
       <div class="column">
@@ -62,6 +103,7 @@
         </div>
     </div>
   </div>
+  <div class="quantity-box"></div>
 
   <script src="./cart.js"></script>
   <script src="./components/Header.js"></script>

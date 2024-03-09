@@ -23,33 +23,26 @@ fetch("https://fakestoreapi.com/products")
                     <p>${element.title}</p>
                 </td>
                 <td class="quantity">
-                    <button class="decrement" >-</button>
-                    <span class="value">1</span>
-                    <button class="increment" >+</button>
+                    <div class="quantity-box">
+                        <span class="decrement" >-</span>
+                        <span class="value">1</span>
+                        <span class="increment" >+</span>
+                        <span class="delete" id=${element.id} ><i class="fa-solid fa-trash"></i></span>
+                    </div>
                 </td>
                 <td class="price">${element.price.toFixed(2)}</td>
             </tr>
         `)    
-    })
-
-    
+    })  
     // increment decrement start 
     let increment = document.querySelectorAll(".increment");
-    console.log(increment)
-
+    // console.log(increment)
     let value = document.querySelectorAll(".value");
-    console.log(value)
-
-    
-
-    
-    
-    
+    // console.log(value) 
     increment.forEach((element,index)=>{
-
         element.addEventListener("click",()=>{
             let initValue = value[index].innerHTML; 
-            console.log(initValue,"initValue")
+            // console.log(initValue,"initValue")
             initValue++;
             value[index].innerHTML = initValue;
             // console.log(initValue,"initValue")
@@ -57,12 +50,9 @@ fetch("https://fakestoreapi.com/products")
 
         })      
     })
-
     let decrement = document.querySelectorAll(".decrement");
-    console.log(decrement)
-
+    // console.log(decrement)
     decrement.forEach((element,index)=>{
-
         element.addEventListener("click",()=>{
             let initValue = value[index].innerHTML; 
             console.log(initValue,"initValue")
@@ -75,13 +65,9 @@ fetch("https://fakestoreapi.com/products")
             }
             // console.log(initValue,"initValue")
             // console.log(index,"element quantity")
-
         })      
     })
     // increment decrement ends   
-
-    
-
     // grandTotal starts here 
     let totalPrice = totalPriceArray.reduce((total, price)=>price+total,0)
     // console.log(totalPrice,"totalPrice")
@@ -94,8 +80,36 @@ fetch("https://fakestoreapi.com/products")
         </tr> 
     `)  
     // grandTotal ends here 
-    
+    // delete item starts
+    let deleteBtn = document.querySelectorAll(".delete");
+    // console.log(deleteBtn, "deleteBtn")
+    deleteBtn.forEach((element,index)=>{
+        element.addEventListener("click", ()=>{
+       
+            let addToCartItemsBeforeDelete =  JSON.parse(localStorage.getItem("addToCartItems"))
+            // let addToCartItemsBeforeDelete =  localStorage.getItem("addToCartItems")
+            // console.log(addToCartItemsBeforeDelete, "addToCartItemsBeforeDelete")
+            let itemToRemove = element.id
+            // console.log(itemToRemove, "itemToRemove")
+            let addToCartItemsAfterDelete = [ ]
+            addToCartItemsAfterDelete = addToCartItemsBeforeDelete.filter(item=>item !== itemToRemove)
+            console.log(addToCartItemsAfterDelete, "addToCartItemsAfterDelete")            
+            localStorage.setItem("addToCartItems",JSON.stringify(addToCartItemsAfterDelete) )
+        })
+    })
+    // delete item ends
+    // empty cart message starts
+    let cartStatus = document.querySelector(".cartStatus");
+    console.log(cartStatus)
+    // if(localStorage.getItem("addToCartItems") == []){
+        // console.log(localStorage.getItem("addToCartItems"))
+        cartStatus.classList.add = "displayNone"
+
+    // }else{
+        // cartStatus.classList.display = "block"
+        cartStatus.classList.remove = "displayNone"
+
+
+    // } 
+    // empty cart message ends 
 })
-
-
-
