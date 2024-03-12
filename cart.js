@@ -30,7 +30,7 @@ fetch("https://fakestoreapi.com/products")
                         <span class="delete" id=${element.id} ><i class="fa-solid fa-trash"></i></span>
                     </div>
                 </td>
-                <td class="price"> $ ${ value *element.price.toFixed(2)}</td>
+                <td class="price"> $ ${ element.price.toFixed(2)}</td>
             </tr>
         `)    
     })

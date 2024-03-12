@@ -229,6 +229,7 @@ header .navigation ul{
 }
 header .navigation ul li{
     font-family: var(--font-primary);
+    text-transform: uppercase ;
 }
 header .logo img{
     width: 100%;
@@ -295,9 +296,11 @@ header .cart i{
     
 }
 /* hero ends hero */
+
 /* products starts here  */
 .products{
     color: var(--bg-dark-primary) !important;
+   
 }
 .products .productsRow{
     display: flex;
@@ -310,7 +313,7 @@ header .cart i{
 
 }
 .products .productsRow .card{
-    width: 18%;
+    width: 24%;
     margin: 0 0 2rem 0;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     transition: all linear 200ms;
