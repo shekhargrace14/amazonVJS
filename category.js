@@ -1,4 +1,4 @@
-let displayProduct = async()=>{
+let displayProduct = async(allCheckCat=[])=>{
     let product = await fetch("https://fakestoreapi.com/products");
     let finalProduct = await product.json();
     console.log(finalProduct)
@@ -12,6 +12,10 @@ let displayProduct = async()=>{
                 <input type="checkbox" value="${element.category}">${element.category}</input> <br>
             `
             allCat.push(element.category)
+        }
+        if(allCheckCat.length==0){
+            allCheckCat = allCat;
+            console.log(allCheckCat,"allCheckCat")
         }
     })
     finalProduct.map((value,index)=>{
