@@ -45,6 +45,16 @@ let displayProduct = async(allCheckCat=[])=>{
                 // console.log(value.title)
         }
 
+        let card = document.querySelectorAll(".card")
+        console.log(card, "card");
+        card.forEach((item,index)=>{
+        item.addEventListener("click", ()=>{
+            let itemID = item.firstElementChild.id
+            console.log(itemID, "card has been clicked")
+            localStorage.setItem("singleProductPage",itemID)
+        })
+    })
+
     })
    
 }
