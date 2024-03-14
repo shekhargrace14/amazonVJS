@@ -91,8 +91,7 @@ p{
     font-size: 13px;
     font-family: var(--font-primary);
     line-height: 1.5rem;
-    color: var(--text-primary-color);
-    
+    color: var(--text-primary-color);  
 }
 
 label{
@@ -109,7 +108,6 @@ li{
     font-family: var(--font-secondary);
     list-style: none;
     color: var(--text-secondary-color);
-
 }
 a{
     color: var(--text-secondary-color);
@@ -289,12 +287,23 @@ header .cart i{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-
-}
-.hero .right img{
-    width: 120%;
     
 }
+.hero .right img
+{
+    position: relative;
+    animation: myMove 2s infinite;
+  
+    width: 120%;
+}
+@keyframes myMove {
+    0%   {top: 0px;}
+    /* 25%  {top: -25px;} */
+    50%  {top: -25px;}
+    /* 75%  {top: 50px;} */
+    100% {top: 0px;}
+  }
+
 /* hero ends hero */
 
 /* products starts here  */
