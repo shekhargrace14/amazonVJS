@@ -6,13 +6,13 @@
 }
 
 :root{
-    --primary-color: #faedeb;
+    --primary-color: #c92028;
     --primary-color-light: #ecc6c0;
     --bg-dark-primary: #000000;
     --bg-light-primary: #fff;
     --bg-dark-secondary: #121212;
 
-    --border-radius: 0.3rem;
+    /* --border-radius: 0.3rem; */
 
     --text-primary-color: #000;
     --text-secondary-color: #737373;
@@ -24,6 +24,9 @@
 body{
     background-color: var(--bg-light-primary);
 }
+html{
+    font-size: 10px;
+}
 
 /* global css starts here  */
 
@@ -32,28 +35,30 @@ a{
 } 
 
 button , .button{
-    margin: .5rem 0 ;
-    padding: .4rem 1rem;
+    margin: 1rem 0  ;
+    padding: .8rem 1.6rem;
     border: none;
     border-radius: var(--border-radius);
     cursor: pointer;
     font-size: 16px;
     font-weight: 400;
     color: white;
-    background-color: var(--bg-dark-primary);
+    background-color: var(--primary-color);
     transition: all ease-in-out 200ms;
 }
 
 .btn-primary{
-    background-color: var(--bg-dark-primary);
-    border: 1px solid var(--primary-color);
+       border: 1px solid transparent;
+
+    /* background-color: var(--bg-dark-primary); */
+    /* border: 1px solid var(--primary-color); */
     
 }
 
 .btn-primary:hover{
-    background-color: var(--primary-color-light);
-    color: var(--bg-dark-primary);
-    border: 1px solid var(--primary-color);
+    background-color: var(--bg-dark-primary);
+    color: white;
+    border: 1px solid white;
 
 }
 .btn-secondary{
@@ -63,34 +68,29 @@ button , .button{
 }
 
 h1, h2, h3, h4, h5, h6{
-    line-height: 2rem;
+    line-height: 5rem;
     font-family: var(--font-primary);
     font-weight: 400;
     color: var(--text-primary-color);
 }
 h1{
-    font-size: 3rem;
-    line-height: 3.5rem;
-    
+    color: white;
+    font-size: 4rem;
 }
 h2{
     font-size: 3rem;
-    line-height: 3.5rem;
-    margin: 1rem 0;
 }
 h3{
-    font-size: 1.5rem;
-
-  
+    font-size: 1.5rem; 
 }
 h4{
     font-size: 18px;
-    margin: .5rem 0;
+  
 }
 p{
-    font-size: 13px;
+    font-size: 1.6rem;
     font-family: var(--font-primary);
-    line-height: 1.5rem;
+    line-height: 2.5rem;
     color: var(--text-primary-color);  
 }
 
@@ -192,7 +192,7 @@ ion-icon{
 
 .padding{
     /* background-color: #9f0d14; */
-    padding: 4% 0;
+    padding: 8rem 0;
 }
 i{
     color: var(--text-primary-color);
@@ -204,13 +204,16 @@ i{
 .displayNone{
     display: none;
 }
+.text-center{
+    text-align: center;
+}
 /* global css ends here  */
 
 
 
 /* header starts here  */
 header{
-    padding: .7rem  0;
+    padding: .5rem;
     position: sticky;
     top: 0;
     background-color: white;
@@ -223,9 +226,10 @@ header .column{
     /* border: 2px solid green; */
 }
 header .navigation ul{
-    gap: 12px;
+    gap: 2rem;
 }
 header .navigation ul li{
+    font-size: 1.6rem;
     font-family: var(--font-primary);
     text-transform: uppercase ;
 }
@@ -263,10 +267,20 @@ header .cart i{
 
 /* hero start hero */
 .hero {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     color: white;
-    margin: 0 0 6%;
-    padding: 3% 0;
+    /* margin: 0 0 6%; */
+    padding: 6% 0;
+    background-image: linear-gradient(to right, rgba(0,0,0,.8), rgba(0,0,0,.6), rgba(0,0,0,.1) ), url(./assets/img07.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero .column{
+    width: 50%;
+}
+.hero p{
+    color: white;
 }
 .hero .carousel {
     display: grid;
@@ -305,6 +319,11 @@ header .cart i{
   }
 
 /* hero ends hero */
+/* intro starts here  */
+.intro{
+    /* background-color: #737373; */
+}
+/* intro ends here  */
 
 /* products starts here  */
 .products{
@@ -327,19 +346,47 @@ header .cart i{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     transition: all linear 200ms;
     border-radius: var(--border-radius);
+    position: relative;
+    overflow: hidden;
+
 }
 .products .productsRow .card:hover{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
 }
 
+.products .productsRow .card .utilityIcons{
+    font-size: 1.6rem;
+    position: absolute;
+    /* background-color: red; */
+    /* width: 100%; */
+    /* height: 100%; */
+    top: .8rem;
+    right: .8rem;
+}
+.products .productsRow .card .utilityIcons i{
+    margin-bottom: .5rem;
+}
+.products .productsRow .card .utilityIcons .onHover{
+    transition: all ease-in-out 200ms;
+    position: relative;
+    right: -2.5rem;
+
+}
+.products .productsRow .card:hover .onHover{
+    position: none;
+    right: 0rem;
+
+}
+
+
 .products .productsRow .imgBox{
-    background-color: white;
+    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 200px;
+    height: 235px;
     overflow: hidden;
 
 }
@@ -353,12 +400,18 @@ header .cart i{
 
 }
 .products .productsRow  .card:hover img{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .products .productsRow .card .info{
-    padding:  0 .5rem .5rem;
+    padding: 1rem 1rem 1rem ;
+
 }
+.products .productsRow .card .info .rating{
+    margin: 1rem 0 0 0 ;
+    font-size: 14px;
+}
+
 .products .productsRow .card .info .productTitle{
     font-size: 18px;
     line-height: 26px;
@@ -380,4 +433,68 @@ header .cart i{
     gap: 16px;
 }
 
+.products .productsRow .card  button{
+
+    position: relative;
+    bottom: -5rem;
+    width: 100%;
+    height: 50px;
+    height: auto;
+    margin:  0  ;
+    transition: all ease-in-out 300ms;
+}
+.products .productsRow  .card:hover button{
+    /* position:relative; */
+
+
+    bottom: 0;
+}
+
+
+
 /* products ends here  */
+/* hero start hero */
+
+.bespoke .column{
+    /* width: 50%; */
+}
+.bespoke p{
+    /* color: white; */
+}
+.bespoke .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 1) -12px );
+    gap: 5px;
+}
+
+
+.bespoke .left{
+    margin: 7rem 0;
+}
+.bespoke .right{
+    /* margin: 7rem 0; */
+    /* clip-path: polygon(15% 13%, 100% 0%, 75% 90%, 0% 100%); */
+    /* background-color: white; */
+    background-image: url(./assets/bg01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+.bespoke .right img
+{
+    position: relative;
+    animation: myMove 2s infinite;
+  
+    width: 90%;
+}
+@keyframes myMove {
+    0%   {top: 0px;}
+    /* 25%  {top: -25px;} */
+    50%  {top: -25px;}
+    /* 75%  {top: 50px;} */
+    100% {top: 0px;}
+  }
+
+/* hero ends hero */
