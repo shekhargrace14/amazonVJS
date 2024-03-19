@@ -12,14 +12,29 @@
         }
         /* filterSideBar starts here  */
         .filterSideBar{
-            width: 15%;
+            width: 23%;
             /* position: sticky; */
             /* left: 0; */
         }
         .filterSideBar input{
-            margin: .4rem 0;
+            margin: .8rem 0;
             text-transform: capitalize;
         }
+        .filterSideBar .category {
+            font-size: 2rem;
+            text-transform: capitalize;
+        }
+        .filterSideBar .category input{
+            font-size: 2.6rem;
+            background-color: red;
+            margin: 1rem 0;
+        }
+        .filterSideBar .category input[value]{
+            background-color: green;
+            margin: 0 1rem 0 0 ;
+
+        }
+
         /* filterSideBar ends here  */
     </style>
 </head>
@@ -52,6 +67,11 @@
         <!-- products ends here  -->
     </main>
     <!-- main ends here  -->
+
+    <footer></footer>
+
+    <script src="./components/footer.js"></script>
+
 
     <script src="./category.js"></script>
     <script src="./components/Header.js"></script>

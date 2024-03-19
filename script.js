@@ -1,3 +1,5 @@
+// categories 1. 
+
 let header = document.querySelector("header")
 
 
@@ -23,8 +25,8 @@ fetch("https://fakestoreapi.com/products")
                         <h3 class="productTitle">${value.title}</h3>
                         
                         <div class="price d-flex ">
-                        <p class="discount">$ ${(value.price+ 10).toFixed(2) }</p>
                         <p class="CurrentPrice">$ ${value.price.toFixed(2)}</p>
+                        <p class="discount">$ ${(value.price+ 10).toFixed(2) }</p>
                         </div>
                     </div>
                     <div >

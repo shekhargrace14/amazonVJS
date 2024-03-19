@@ -1,3 +1,3 @@
-fetch("./components/Header.html")
+fetch("./components/header.html")
 .then((response)=> response.text())
-.then((data)=> document.querySelector("Header").innerHTML = data )
+.then((data)=> document.querySelector("header").innerHTML = data )
