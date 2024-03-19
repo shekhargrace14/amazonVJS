@@ -11,7 +11,7 @@ fetch("https://fakestoreapi.com/products")
         document.querySelector(".productTitle").innerHTML = matchedId.title;
         document.querySelector(".description").innerHTML = matchedId.description;
         document.querySelector(".discount").innerHTML = (matchedId.price + 5).toFixed(2);
-        document.querySelector(".CurrentPrice").innerHTML = matchedId.price.toFixed(2);
+        document.querySelector(".CurrentPrice").innerHTML = `$ ${matchedId.price.toFixed(2)}`;
         document.getElementById("imageUrl").src = matchedId.image;
         document.getElementById("addToCartProductId").id = matchedId.id;
         document.querySelector("#productId").id = matchedId.id;
