@@ -279,13 +279,14 @@ header .grid{
     align-items: right;
 }
 header .search form{
+    width: 80%;
     border: 1px solid rgb(219, 216, 216);
     /* background-color: wheat; */
     padding: 1rem;
 
 }
 header .search input{
-    width: 80%;
+    width: 90%;
     margin: 0;
     background-color: none;
 }

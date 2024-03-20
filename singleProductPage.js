@@ -15,6 +15,10 @@ fetch("https://fakestoreapi.com/products")
         document.getElementById("imageUrl").src = matchedId.image;
         document.getElementById("addToCartProductId").id = matchedId.id;
         document.querySelector("#productId").id = matchedId.id;
+        document.querySelector(".pcategory").innerHTML = matchedId.category;
+        document.querySelector(".rating").innerHTML = matchedId.rating.rate;
+        document.querySelector(".count").innerHTML = matchedId.rating.count;
+
     }
 })
 

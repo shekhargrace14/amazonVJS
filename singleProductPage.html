@@ -19,6 +19,7 @@
 
         .singleProduct .row .left .imgBox{
             /* background-color: green; */
+            margin: 7rem 0 0 0;
             width: 100%;
             height: 100%;
         }
@@ -29,6 +30,9 @@
             font-size: 2.3rem;
             font-weight: 700;
         }
+        .pcategory{
+            text-transform: capitalize;
+        }
     </style>
 </head>
 <body>
@@ -37,7 +41,7 @@
         <div class="container">
             <div class="row d-flex gap">
                 <div class="column left">
-                    <div class="imgBox d-flex align-center justify-center">
+                    <div class="imgBox d-flex align-start justify-center">
                         <img src=" " alt="" id="imageUrl" >
                     </div>
                 </div>
@@ -58,9 +62,27 @@
                             <button class="btn-primary">Wish List</button>
                         </div>
                     </div>
+                    <div class="info2">
+                        <p>SKU</p>
+                        <div class="d-flex">
+                            <p>Availability : </p>
+                            <p class="availability"> In Stock</p>
+                        </div>
+                        <div class="d-flex">
+                            <p>Category :</p>
+                            <p class="pcategory"></p>
+                        </div>
+                        <div class="d-flex ">
+                            <p>Rating :</p>
+                            <p class="rating"></p> 
+                            <p>|</p>
+                            <p class="count"></p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
+            
         </div>
     </div>
     <footer></footer>
