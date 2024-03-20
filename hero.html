@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        /* hero start hero */
+        .heroNew .column{
+
+            /* background-color: red; */
+        }
+
+
+        .heroNew .left{
+            width: 50%;
+            /* margin: 7rem 0; */
+        }
+        .heroNew .right{
+            width: 50%;
+
+
+            
+        }
+
+        .carousel{
+            position: relative;
+            background-color: wheat;
+            overflow: hidden;
+        }
+        .text{
+            /* position: absolute; */
+            /* z-index: 1; */
+            /* background-color: gray; */
+            width: 100%;
+            height: 100%;
+        }
+        img{
+            /* position: absolute; */
+            /* z-index: 0; */
+            /* top: 0; */
+            /* left: ; */
+            width: 100%;
+        }
+
+
+        /* hero ends hero */
+    </style>
+</head>
+<body>
+    <h2>hero</h2>
+    <!-- hero starts here  -->
+
+    <div class="heroNew">
+        <div class="carousel">
+            <div class="container">
+                <div class="row ">
+                    <div class="column text">
+                        <div class="left">
+                            <h1>No Matter What Lifestyle you live</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iure nobis aspernatur sapiente eius architecto quos inventore culpa omnis, cupiditate voluptatum.</p>
+                            <button class="btn-primary">Buy Now</button>
+                        </div>
+                        <div class="right">
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    <img src="./assets/img07.jpg" alt="">
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="heroNew">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <h1>No Matter What Lifestyle you live</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iure nobis aspernatur sapiente eius architecto quos inventore culpa omnis, cupiditate voluptatum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero ends  -->
+
+    <!-- <script>
+        async function heroJson(){
+
+            let response = await fetch("./json/hero.json");
+            let data = await response.json();
+            console.log(data.heroData , "data.heroData")
+            showData(data)
+            return data
+        } 
+        heroJson()
+
+        function showData(data){
+            let showData = data
+            console.log(showData)
+            let carousel = document.querySelector(".carousel")
+            showData.heroData.map((item)=>{
+                carousel.insertAdjacentHTML("beforeend",`
+                    <div class="row ">
+                    <div class="column left">
+                        <h1>${item.title}</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iure
+                            nobis aspernatur sapiente eius architecto quos inventore culpa omnis, cupiditate voluptatum.</p>
+                        <button class="btn-primary">Buy Now</button>
+                    </div>
+                    <div class="column">
+
+                    </div>
+
+                    </div>
+                    <div class="row bg">
+                        <div class="column">
+                            <img src="${item.image}" alt="">
+                        </div>
+                    </div>
+                `)
+                console.log(item)
+            }) 
+        }
+        showData() -->
+
+
+
+    </script>
+
+    
+</body>
+</html>
