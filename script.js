@@ -51,3 +51,14 @@ fetch("https://fakestoreapi.com/products")
         })
     })
 })
+
+
+
+
+
+
+
+
+// productSlider start here 
+
+// productSlider ends here 
