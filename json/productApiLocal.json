@@ -1,0 +1,38 @@
+
+[
+        {
+        "id" : 1,
+        "image" : "./assets/apiImages/img1.jpg",
+        "title" : "No Matter What Lifestyle you live",
+        "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "price": 200
+
+    },
+    {
+        "id" : 2,
+        "image" : "./assets/apiImages/img2.jpg",
+        "title" : "No Matter What Lifestyle you live",
+        "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "price": 200
+
+    },
+    {
+        "id" : 3,
+        "image" : "./assets/apiImages/img3.jpg",
+        "title" : "No Matter What Lifestyle you live",
+        "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "price": 200
+
+    }
+    ,
+    {
+        "id" : 4,
+        "image" : "./assets/apiImages/img5.jpg",
+        "title" : "No Matter What Lifestyle you live",
+        "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "price": 200
+
+    }
+
+]
+

@@ -14,7 +14,7 @@
 
             position: relative;
         }
-         .carousel{
+        .productSlider .productSliderCarousel{
             display: grid;
             gap: 15px;
             grid-auto-flow: column;
@@ -23,7 +23,7 @@
             /* position: relative; */
             scroll-behavior: smooth;
         }
-        .productSlider .card{
+        .productSlider .productSliderCard{
             width: 100%;
             /* background-color: red; */
             /* display: flex; */
@@ -32,7 +32,7 @@
             /* align-content: start; */
             /* flex-direction: column; */
         }
-        .productSlider .card .imgBox {
+        .productSlider .productSliderCard .imgBox {
             /* background-color: green; */
             display: flex;
             justify-content: center;
@@ -42,14 +42,14 @@
 
             overflow: hidden;
         }
-        .productSlider .card .imgBox img{
+        .productSlider .productSliderCard .imgBox img{
             /* width: 150px; */
         }
-        .productSlider .card .info{
+        .productSlider .productSliderCard .info{
             /* background-color: yellow; */
             padding: 1rem 1rem 0;
         }
-        .productSlider .card .info .productTitle{
+        .productSlider .productSliderCard .info .productTitle{
             display: -webkit-box;
             -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;  
@@ -70,11 +70,11 @@
             z-index: 19;
         }
         .productSlider .next{
-            right: 10px;
+            right: -4rem;
         
         }
         .productSlider .prev{
-            left:10px;
+            left: -4rem;
         }
     </style>
 
@@ -85,7 +85,7 @@
         <!-- .productSlider starts here  -->
         <div class="container padding productSlider">
             <span id="left" class="arrow prev arrowHidden" >&#10094;</span>
-            <div class="row  carousel">
+            <div class="row  productSliderCarousel">
                 
             </div>
             <span id="right" class="arrow next" >&#10095;</span>  

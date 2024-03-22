@@ -2,11 +2,11 @@ fetch("https://fakestoreapi.com/products")
 .then((resolve)=> resolve.json())
 .then((data)=>{
     console.log(data)
-    let carousel = document.querySelector(".carousel")
+    let carousel = document.querySelector(".productSliderCarousel")
     console.log(carousel)
     data.map((value)=>{
         carousel.insertAdjacentHTML("beforeend",`
-            <div class="column card">
+            <div class="column productSliderCard">
                 <div class="imgBox">
                     <img src=${value.image} alt="">
 
@@ -31,11 +31,11 @@ fetch("https://fakestoreapi.com/products")
     })
 
 
-    let card = document.querySelectorAll(".card")
-    let cardWidth = document.querySelector(".card").getBoundingClientRect().width
+    let productSliderCard = document.querySelectorAll(".productSliderCard")
+    let cardWidth = document.querySelector(".productSliderCard").getBoundingClientRect().width
     // const cardWidth = card.getBoundingClientRect()
     // let cardWidth = card.offsetWidth;
-    console.log(card)
+    console.log(productSliderCard)
     console.log(cardWidth)
 
     let arrows = document.querySelectorAll(".arrow")
