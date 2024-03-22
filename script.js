@@ -6,7 +6,7 @@ let header = document.querySelector("header")
 fetch("https://fakestoreapi.com/products")
 .then(response=>response.json())
 .then(data=>{
-    // console.log(data);
+    console.log(data);
     let productsRow = document.querySelector(".productsRow");
     data.map((value,index)=>{
         productsRow.insertAdjacentHTML("beforeend",`
@@ -55,7 +55,8 @@ fetch("https://fakestoreapi.com/products")
 
 // productSlider start here 
 
-fetch("https://fakestoreapi.com/products")
+// fetch("https://fakestoreapi.com/products")
+fetch("./json/productApiLocal.json")
 .then((resolve)=> resolve.json())
 .then((data)=>{
     console.log(data)
@@ -72,12 +73,13 @@ fetch("https://fakestoreapi.com/products")
                     <p class="rating"> ${value.rating.rate} | ${value.rating.count} </p>
                     <h4 class="productTitle">${value.title}</h4>
 
-                    <div class="price ">
-                    <p class="CurrentPrice">$ ${value.price.toFixed(2)}</p>
+                    <div class="price d-flex ">
+                    <p class="CurrentPrice">$ ${value.price.toFixed(2)}</p> &nbsp; &nbsp;
                     <p class="discount">$ ${(value.price+ 10).toFixed(2) }</p>
+                    
                     </div>
                 </div>
-                <div class="d-flex justify-center">
+                <div >
                     <a href="./singleProductPage.html" id=${value.id}>
                         <button class="btn-primary" >Quick Shop</button>
                     </a>

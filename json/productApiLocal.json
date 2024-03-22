@@ -5,21 +5,33 @@
         "image" : "./assets/apiImages/img1.jpg",
         "title" : "No Matter What Lifestyle you live",
         "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        "price": 200
+        "price": 200,
+        "rating":{
+            "rate" : 3.9,
+            "count" : 120
+        }
     },
     {
         "id" : 2,
         "image" : "./assets/apiImages/img2.jpg",
         "title" : "No Matter What Lifestyle you live",
         "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        "price": 200
+        "price": 200,
+        "rating":{
+            "rate" : 3.9,
+            "count" : 120
+        }
     },
     {
         "id" : 3,
         "image" : "./assets/apiImages/img3.jpg",
         "title" : "No Matter What Lifestyle you live",
         "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        "price": 200
+        "price": 200,
+        "rating":{
+            "rate" : 3.9,
+            "count" : 120
+        }
     }
     ,
     {
@@ -27,21 +39,33 @@
         "image" : "./assets/apiImages/img4.jpg",
         "title" : "No Matter What Lifestyle you live",
         "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        "price": 200
+        "price": 200,
+        "rating":{
+            "rate" : 3.9,
+            "count" : 120
+        }
     },
     {
         "id" : 5,
         "image" : "./assets/apiImages/img5.jpg",
         "title" : "No Matter What Lifestyle you live",
         "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        "price": 200
+        "price": 200,
+        "rating":{
+            "rate" : 3.9,
+            "count" : 120
+        }
     },
     {
         "id" : 6,
         "image" : "./assets/apiImages/img6.jpg",
         "title" : "No Matter What Lifestyle you live",
         "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        "price": 200
+        "price": 200,
+        "rating":{
+            "rate" : 3.9,
+            "count" : 120
+        }
     }
     ,
     {
@@ -49,21 +73,33 @@
         "image" : "./assets/apiImages/img7.jpg",
         "title" : "No Matter What Lifestyle you live",
         "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        "price": 200
+        "price": 200,
+        "rating":{
+            "rate" : 3.9,
+            "count" : 120
+        }
     },
     {
         "id" : 8,
         "image" : "./assets/apiImages/img8.jpg",
         "title" : "No Matter What Lifestyle you live",
         "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        "price": 200
+        "price": 200,
+        "rating":{
+            "rate" : 3.9,
+            "count" : 120
+        }
     },
     {
         "id" : 9,
         "image" : "./assets/apiImages/img9.jpg",
         "title" : "No Matter What Lifestyle you live",
         "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        "price": 200
+        "price": 200,
+        "rating":{
+            "rate" : 3.9,
+            "count" : 120
+        }
     }
     ,
     {
@@ -71,21 +107,33 @@
         "image" : "./assets/apiImages/img10.jpg",
         "title" : "No Matter What Lifestyle you live",
         "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        "price": 200
+        "price": 200,
+        "rating":{
+            "rate" : 3.9,
+            "count" : 120
+        }
     },
     {
         "id" : 11,
         "image" : "./assets/apiImages/img11.jpg",
         "title" : "No Matter What Lifestyle you live",
         "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        "price": 200
+        "price": 200,
+        "rating":{
+            "rate" : 3.9,
+            "count" : 120
+        }
     },
     {
         "id" : 12,
         "image" : "./assets/apiImages/img12.jpg",
         "title" : "No Matter What Lifestyle you live",
         "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        "price": 200
+        "price": 200,
+        "rating":{
+            "rate" : 3.9,
+            "count" : 120
+        }
     }
     ,
     {
@@ -93,28 +141,44 @@
         "image" : "./assets/apiImages/img13.jpg",
         "title" : "No Matter What Lifestyle you live",
         "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        "price": 200
+        "price": 200,
+        "rating":{
+            "rate" : 3.9,
+            "count" : 120
+        }
     },
     {
         "id" : 14,
         "image" : "./assets/apiImages/img14.jpg",
         "title" : "No Matter What Lifestyle you live",
         "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        "price": 200
+        "price": 200,
+        "rating":{
+            "rate" : 3.9,
+            "count" : 120
+        }
     },
     {
         "id" : 15,
         "image" : "./assets/apiImages/img15.jpg",
         "title" : "No Matter What Lifestyle you live",
         "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        "price": 200
+        "price": 200,
+        "rating":{
+            "rate" : 3.9,
+            "count" : 120
+        }
     },
     {
         "id" : 16,
         "image" : "./assets/apiImages/img8.jpg",
         "title" : "No Matter What Lifestyle you live",
         "description" : " Amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat magnam eveniet nisi harum iureLorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        "price": 200
+        "price": 200,
+        "rating":{
+            "rate" : 3.9,
+            "count" : 120
+        }
     }
   
 
