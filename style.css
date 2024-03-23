@@ -442,8 +442,44 @@ header .cart i{
 }
 /* usps ends here  */
 
+  /* filterSideBar starts here  */
+  main{
+    padding: 6% 0;
+}
+.filterSideBar{
+    width: 23%;
+    /* left: 0; */
+}
+.filterSideBar .filterSideBarBox{
+    top: 10rem;
+    position: sticky;
+
+}
+.filterSideBar .filterSideBarBox input{
+    margin: .8rem 0;
+    text-transform: capitalize;
+}
+.filterSideBar .filterSideBarBox .FilterCategory {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.filterSideBar .filterSideBarBox .FilterCategory input{
+    font-size: 2.6rem;
+    background-color: red;
+    margin: 1rem 0;
+}
+.filterSideBar .filterSideBarBox .FilterCategory input[value]{
+    background-color: green;
+    margin: 0 1rem 0 0 ;
+
+}
+
+/* filterSideBar ends here  */
+
 /* products starts here  */
 .products{
+    width: 75%;
+    min-height: 60vh;
     color: var(--bg-dark-primary) !important;
    
 }
@@ -458,7 +494,7 @@ header .cart i{
 
 }
 .products .productsRow .card{
-    width: 24%;
+    width: 32%;
     margin: 0 0 2rem 0;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     transition: all linear 200ms;
@@ -575,6 +611,7 @@ header .cart i{
 
 
 /* products ends here  */
+
 /* hero start hero */
 .bespoke{
     background-color: rgb(233, 215, 215);
