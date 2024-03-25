@@ -45,11 +45,7 @@ fetch("https://fakestoreapi.com/products")
             // console.log(initValue,"initValue")
             newValue++;
             value[index].innerHTML = newValue;
-            let price = document.querySelector(".price").innerHTML
-            console.log(price,"price")
-            let priceAfterIncrement = newValue * price
-            price.innerHTML = priceAfterIncrement
-            console.log(priceAfterIncrement,"priceAfterIncrement");
+            
         })      
     })
 
