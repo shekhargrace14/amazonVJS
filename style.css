@@ -158,6 +158,9 @@ ion-icon{
 .justify-start{
     justify-content: start;
 }
+.justify-end{
+    justify-content: end;
+}
 .justify-center{
     justify-content: center;
 }
@@ -306,13 +309,49 @@ header .cart i{
     color: var(--primary-color);
     
 }
-
-
-
-
-
-
 /* header ends here  */
+/* header with nav starts here  */
+header .grid{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 2fr 10fr;
+    /* align-items: right; */
+    justify-content: space-between;
+
+}
+header .logo{
+    /* width: 30%; */
+    background-color: var(--text-secondary-color);
+}
+header nav{
+    /* width: 70%; */
+
+    /* background-color: aquamarine; */
+}
+header nav.grid{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 4fr 4fr  2fr  2fr ;
+    align-items: right;
+    /* background-color: palegoldenrod; */
+}
+header .spacer{
+    display: none;
+    background-color: yellow;
+
+}
+header .toggle {
+    
+    font-size: 3rem;
+    display: none;
+}
+header .toggle .menu{
+    background-color: #737373;
+    padding: 2rem;
+}
+
+
+/* header with nav ends here  */
 
 /* hero start hero */
 .hero {

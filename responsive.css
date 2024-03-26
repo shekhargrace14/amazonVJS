@@ -1,0 +1,110 @@
+@media only screen and (max-width:1024px){
+    /* header starts here  */
+    header .grid{
+       
+        grid-auto-columns: 4fr 4fr 4fr;
+        justify-content: center;
+
+    }
+    header .logo{
+        background-color: pink;
+        justify-content: center;
+    }
+    header nav{
+        /* gap: 2rem; */
+        display: none !important;
+        background-color: red;
+    }
+    header .spacer{
+        display:block;
+        background-color: yellow;
+    
+    }
+    header .toggle {
+
+        display: block;
+        background-color: aquamarine;
+    }
+    header .toggle i{
+        display: inline-block;
+        background-color: red;
+        
+    }
+
+    /* header ends here  */
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:769px){
+
+    body{
+        /* background-color: red; */
+    }
+
+    /* usps starts here */
+    .usps .row{
+        flex-direction: column;
+        /* background-color: aqua; */
+    }
+    .usps .row .box{
+        min-width: 35%;
+        /* flex-direction: column; */
+        /* background-color: aqua; */
+    }
+    .usps .left {
+        width: 100%;
+    }
+    .usps .top {
+        flex-direction: column;
+        width: 100%;
+        /* background-color: green; */
+    }
+    .usps .top .category{
+        padding: 2rem;
+        width: 100%;
+        /* background-color: yellowgreen; */
+    }
+    .usps .right {
+        width: 100%;
+
+        margin: 1.6rem 0 0;
+    }
+    .usps .right .category4{
+        height: 350px;
+        background-position: top;
+    }
+
+    /* usps ends here */
+    /* products starts here */
+
+    .filterSideBar{
+        width: 100%;
+
+    }
+    .productsContainer .row{
+        flex-direction: column;
+
+
+    }
+    .products{
+        margin: 1.6rem 0 0;
+        width: 100%;
+        /* background-color: red; */
+    }
+    .products .productsRow{
+        gap: 5px;
+    }
+    .products .productsRow .card{
+        width: 48%;
+    }
+    /* products ends here */
+}

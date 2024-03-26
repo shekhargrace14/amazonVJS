@@ -1,58 +1,66 @@
-
-
     <div class="container ">
         <div class="row grid ">
+            <div class="spacer"></div>
+
             <div class="column logo d-flex justify-start align-center">
                 <a href="./index.html"><img src="assets/logo-regular.png" alt=""></a>
             </div>
+            <nav class="grid">
 
-            <div class="column search d-flex justify-center align-center">
-                <form action="">
-                    <input type="search" placeholder="Search ">
-                    <i class="fa-solid fa-magnifying-glass"></i>
 
-                </form>
-            </div>
+                <div class="column search d-flex justify-center align-center">
+                    <form action="">
+                        <input type="search" placeholder="Search ">
+                        <i class="fa-solid fa-magnifying-glass"></i>
 
-            <div class="column d-flex align-center navigation">
-                <ul class="d-flex justify-between align-center">
-                    <a href="./index.html"><li> Home</li></a>
-                    <a href="./about.html"><li> About</li></a>
-                    <div class="category">
+                    </form>
+                </div>
 
-                        <li class="d-flex align-center" >Category  <i class="fa-solid fa-sort-down"></i></li>
+                <div class="column d-flex align-center navigation">
+                    <ul class="d-flex justify-between align-center">
+                        <a href="./index.html"><li> Home</li></a>
+                        <a href="./about.html"><li> About</li></a>
+                        <div class="category">
+
+                            <li class="d-flex align-center" >Category  <i class="fa-solid fa-sort-down"></i></li>
+
+                                <ul class="categoryDropDown">
+                                    <!-- Category &nbsp; &nbsp; <i class="fa-solid fa-sort-down"></i> -->
+                                    <a href="./men.html"><li> MEN </li></a>
+                                    <a href="./women.html"><li> WOMEN </li></a>
+                                    <a href="./jewelery.html"><li> Jewelery </li></a>
+                                    <a href="./electronics.html"><li> Electronics </li></a>
+
+                                </ul>
                             
-                            <ul class="categoryDropDown">
-                                <!-- Category &nbsp; &nbsp; <i class="fa-solid fa-sort-down"></i> -->
-                                <a href="./men.html"><li> MEN </li></a>
-                                <a href="./women.html"><li> WOMEN </li></a>
-                                <a href="./jewelery.html"><li> Jewelery </li></a>
-                                <a href="./electronics.html"><li> Electronics </li></a>
-                                
-                            </ul>
-                       
-                    </div>
-                    <a href="./contact.html"><li>Contact</li></a>
+                        </div>
+                        <a href="./contact.html"><li>Contact</li></a>
 
-                </ul>
+                    </ul>
+                </div>
+
+
+
+                <div class="column cart d-flex justify-center align-center">
+                    <a href="./cart.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <!-- <a href="../wishList.html">
+                        <i class="fa-solid fa-heart"></i>
+
+                    </a> -->
+                </div>
+                <div class="column user d-flex justify-end align-center">
+                    <a href="#">
+                        <button class="btn-primary">LOG IN</button>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="toggle d-flex align-center justify-center">
+                <i class="fa-solid fa-bars"></i>
+
             </div>
 
-
-
-            <div class="column cart d-flex justify-center align-center">
-                <a href="./cart.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-                <!-- <a href="../wishList.html">
-                    <i class="fa-solid fa-heart"></i>
-
-                </a> -->
-            </div>
-            <div class="column user d-flex justify-center align-center">
-                <a href="#">
-                    <button class="btn-primary">LOG IN</button>
-                </a>
-            </div>
         </div>
     </div>
-
