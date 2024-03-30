@@ -147,9 +147,9 @@ fetch("./json/productApiLocal.json")
 
 
 // toggle starts here 
-import {toggle} from './components/header'
+// import {toggle} from './components/header'
 
-toggle.addEventListener("click", ()=>{
-    console.log("hello")
-})
+// toggle.addEventListener("click", ()=>{
+//     console.log("hello")
+// })
 // toggle ends here 

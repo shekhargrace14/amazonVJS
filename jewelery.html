@@ -8,10 +8,90 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .usps2 .row{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+            /* grid-template-rows:1fr 1fr ; */
+            gap: 10px;
+        }
+        .usps2 .row .category3{
+            grid-column: 3;
+            grid-row-start: 1  ;
+            grid-row-end: 3;
+            background-color: aqua;
 
+        }
+        .usps2 .row .category4{
+            grid-row-start: 2;  
+            grid-row-end: 3;  
+            grid-column-start: 1  ;
+            grid-column-end: 3;
+        }
+        .usps2 .row .category3 img{
+            height: auto;
+            /* object-fit: cover; */
+        }
+
+        .category .box{
+            position: absolute;
+        }
+        .category .box{
+            /* width: 200px; */
+            /* height: 100px; */
+            padding: .8rem 1.6rem;
+            background-color: white;
+            position: absolute;
+            /* left: 2rem; */
+            /* bottom: 2rem; */
+            inset:auto auto 2rem 2rem;
+
+        }
+        .category img{
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header></header>
+    <!-- usps2 starts here  -->
+    <div class="container usps2 padding">
+        <div class="row ">
+            <div class="category category1">
+                <div class="box">
+                    <h3>1 Men's Clothing</h3>
+                    <a href="./men.html"> <p>Show Now <i class="fa-solid fa-chevron-right"></i> </p></a>
+                    
+                </div>
+                <img src="./assets/img01.jpg" alt="">
+            </div>
+            <div class="category category2">
+                <div class="box">
+                    <h3>2 Jewelery</h3>
+                    <a href="./jewelery.html"> <p>Show Now <i class="fa-solid fa-chevron-right"></i> </p></a>
+                </div>
+                <img src="./assets/img02.jpg" alt="">
+            </div>
+
+            <div class="category category3">
+                <div class="box">
+                    <h3>3 Electronics</h3>
+                    <a href="./electronics.html"> <p>Show Now <i class="fa-solid fa-chevron-right"></i> </p></a>
+                </div>
+                <img src="./assets/img03.jpg" alt="">
+            </div>
+            <div class="category category4">
+                <div class="box">
+                    <h3>4 Women's Clothing</h3>
+                    <a href="./women.html"> <p>Show Now <i class="fa-solid fa-chevron-right"></i> </p></a>
+                </div>
+                <img src="./assets/img04.jpg" alt="">
+
+            </div>
+
+        </div>
+    </div>
+    <!-- usps2 ends here  -->
     <footer></footer>
     <script src="./components/header.js"></script>
     <script src="./components/footer.js"></script>
