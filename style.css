@@ -292,6 +292,7 @@ header .cart i{
 header .logo{
     /* width: 30%; */
     /* background-color: var(--text-secondary-color); */
+    /* // */
 }
 header .row.grid{
     display: grid;
