@@ -291,7 +291,7 @@ header .cart i{
 /* header with nav starts here  */
 header .logo{
     /* width: 30%; */
-    /* background-color: var(--text-secondary-color); */
+    background-color: transparent;
     /* // */
 }
 header .row.grid{
